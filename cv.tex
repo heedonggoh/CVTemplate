@@ -1,0 +1,39 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Curriculum Vitae TEMPLATE                                              %
+% BY HEEDONG GOH <wellposed@gmail.com> 2016.08.27                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\update}{August, 2016}
+\newcommand{\name}{Heedong Goh}
+\newcommand{\affiliation}{my affiliation}
+\newcommand{\contact}{my contact}
+%%%% DO NOT CHANGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx} \DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{lastpage}
+\usepackage[top=1.5in, bottom=1.5in, left=1.0in, right=1.0in]{geometry}
+\usepackage{fancyhdr} \setlength{\headheight}{15.2pt} \pagestyle{fancy}
+\usepackage{tabularx}
+\usepackage{parskip}
+\lhead{\huge \textsc{\name}} \chead{} \rhead{\small Curriculum Vitae (\update)} \cfoot{ }
+\rfoot{page \thepage\ of \pageref{LastPage}}
+\setlength{\headsep}{0.15in} %space between header and text
+\setlength{\parskip}{4.0pt} %paragraph space
+\renewcommand{\baselinestretch}{0.9} %line space
+%%%% NEW COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\itemTitle}[1]{\begin{flushleft}\textbf{#1}\end{flushleft}}
+\newcommand{\basicInfo}[2]{\begin{flushright}\small #1\\\small #2\end{flushright}}
+\newcommand{\itemContents}[2]{\begin{tabularx}{\textwidth}{>{\quad}Xp{12.5cm}}#1&#2\end{tabularx}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\basicInfo{\affiliation}{\contact}
+\begin{center}\end{center}
+\itemTitle{Item Title 1}
+\itemContents{date 1.1}{contents 1.1}
+\itemContents{date 1.2}{contents 1.2}
+\itemTitle{Item Title 2}
+\itemContents{date 2.1}{contents 2.1}
+\itemContents{date 2.2}{contents 2.2}
+
+\end{document}
